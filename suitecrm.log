@@ -1,0 +1,20 @@
+Tue Sep 19 17:48:50 2017 [9328][-none-][FATAL] SECURITY: User authentication for root failed
+Tue Sep 19 17:48:50 2017 [9328][-none-][FATAL] FAILED LOGIN:attempts[1] - root
+Tue Sep 19 17:52:00 2017 [9328][1][FATAL] ERROR: rmdir_recursive(): argument cache/themes/SuiteP/modules is not a file or a dir.
+Tue Sep 19 17:57:58 2017 [9328][1][SECURITY] User Administrator attempted to send an email using incorrect email account settings in which they do not have access to.
+Tue Sep 19 18:09:41 2017 [9328][1][FATAL] Exception handling in C:\xampp4\htdocs\SuiteCRM-7.9.5\include\MVC\Controller\SugarController.php:402
+Tue Sep 19 18:09:41 2017 [9328][1][FATAL] Exception in Controller:  SugarFolder::retrieveFoldersForProcessing() Cannot Retrieve Folders - Please check the users inbound email settings.
+Tue Sep 19 18:09:41 2017 [9328][1][FATAL] backtrace:
+#0 C:\xampp4\htdocs\SuiteCRM-7.9.5\include\SugarFolders\SugarFolders.php(608): SugarFolder->retrieveFoldersForProcessing(Object(User), false)
+#1 C:\xampp4\htdocs\SuiteCRM-7.9.5\modules\Emails\EmailUI.php(2782): SugarFolder->getGroupFoldersForSettings(Object(User))
+#2 C:\xampp4\htdocs\SuiteCRM-7.9.5\modules\Emails\EmailUIAjax.php(1286): EmailUI->getShowAccountsOptions(Object(InboundEmail))
+#3 C:\xampp4\htdocs\SuiteCRM-7.9.5\include\MVC\View\SugarView.php(791): include_once('C:\\xampp4\\htdoc...')
+#4 C:\xampp4\htdocs\SuiteCRM-7.9.5\include\MVC\View\views\view.classic.php(74): SugarView->includeClassicFile('modules/Emails/...')
+#5 C:\xampp4\htdocs\SuiteCRM-7.9.5\include\MVC\View\SugarView.php(199): ViewClassic->display()
+#6 C:\xampp4\htdocs\SuiteCRM-7.9.5\include\MVC\Controller\SugarController.php(432): SugarView->process()
+#7 C:\xampp4\htdocs\SuiteCRM-7.9.5\include\MVC\Controller\SugarController.php(375): SugarController->processView()
+#8 C:\xampp4\htdocs\SuiteCRM-7.9.5\include\MVC\SugarApplication.php(105): SugarController->execute()
+#9 C:\xampp4\htdocs\SuiteCRM-7.9.5\index.php(52): SugarApplication->execute()
+#10 {main}
+Tue Sep 19 18:12:05 2017 [9328][1][FATAL] SugarPHPMailer encountered an error: No se ha configurado un servidor de correo saliente para el envío de correos. Por favor, configure o seleccione un servidor de correo saliente para la cuenta de correo que está utilizando en Configuración >> Cuenta de Correo.
+Tue Sep 19 18:12:05 2017 [9328][1][FATAL] SugarPHPMailer encountered an error: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
